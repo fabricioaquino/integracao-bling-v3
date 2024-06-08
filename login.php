@@ -10,7 +10,7 @@ $code = $_GET['code']; // Validade de 1 min
 $clientId = ''; // Preencher
 $clientSecret = ''; // Preencher
 
-if (is_null($clientId) || is_null($clientSecret)) {
+if (empty($clientId) || empty($clientSecret)) {
     exit('clientId ou clientSecret não encontrados.');
 }
 
